@@ -1,2 +1,6 @@
-Record date = "2016/12/12">
-</hwd>
+<HWRecord data = "2016/12/12">
+    <Eng>
+        <due>2016/12/12</due>
+        <picture>none</picture>
+    </Eng>
+</HWRecord>
