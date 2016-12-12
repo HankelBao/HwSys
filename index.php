@@ -1,3 +1,7 @@
+<?php
+    $HWData = simplexml_load_file("test.xml");
+?>
+
 <html>
     <head>
         <title>SFLS G1C4 Homework System</title>
@@ -5,7 +9,7 @@
     <body>
         <h1>SFLS G1C4 Homework System</h1>
         <?php
-            print("<h2>test</h2>");
+            print($HWData["date"]);
         ?>
     </body>
 </html>
