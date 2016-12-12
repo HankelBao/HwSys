@@ -3,6 +3,9 @@
         <title>SFLS G1C4 Homework System</title>
     </head>
     <body>
-        <h1>H</h1>
+        <h1>SFLS G1C4 Homework System</h1>
+        <?php
+            print("<h2>This is php</h2>");
+        ?>
     </body>
 </html>
