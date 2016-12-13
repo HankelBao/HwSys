@@ -8,6 +8,7 @@
     </head>
     <body>
         <h1>SFLS G1C4 Homework System</h1>
+        <a href="/teachersClient.php">Add homework</a>
         <?php
             foreach($HWData->HWRecord as $x) {
                 echo $x->due.": ".$x->description." </br>";
