@@ -10,8 +10,9 @@
         <h1>SFLS G1C4 Homework System</h1>
         <?php
             foreach($HWData->HWRecord as $x) {
-                print($x->due);
-                print("<hr>");
+                print($x->due.": ".$x->description." </br>");
+                print($x->picture);
+                print("</br>");
             }
         ?>
     </body>
