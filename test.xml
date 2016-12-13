@@ -5,10 +5,4 @@
         <description>it's today's Eng homework</description>
         <picture>none</picture>
     </HWRecord>
-    <HWRecord date="2016/12/13" author="Eng">
-        <due>1999/04/04</due>
-        <description>it's today's Eng homework</description>
-        <picture>none</picture>
-    </HWRecord>
-    <testCode>aaa</testCode>
 </SFlsHWG1C4>

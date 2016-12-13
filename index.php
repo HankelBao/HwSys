@@ -10,9 +10,9 @@
         <h1>SFLS G1C4 Homework System</h1>
         <?php
             foreach($HWData->HWRecord as $x) {
-                print($x->due.": ".$x->description." </br>");
-                print($x->picture);
-                print("</br>");
+                echo $x->due.": ".$x->description." </br>";
+                echo $x->picture;
+                echo "</br>";
                 $x->due = "1999/04/04";
             }
             $save_xml = $HWData->asXML();
