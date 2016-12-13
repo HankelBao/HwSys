@@ -1,6 +1,10 @@
-<HWRecord date="2016/12/12">
-    <Eng>
-        <due>2016/12/12</due>
-        <picture>none</picture>
-    </Eng>
+<HWRecord date="2016/12/12" author="Eng">
+    <due>2016/12/13</due>
+    <description>it's today's Eng homework</description>
+    <picture>none</picture>
+</HWRecord>
+
+<HWRecord data="2016/12/13" author="Chi">
+    <due>2016/12/14</due>
+    <description>it's today's </description>
 </HWRecord>

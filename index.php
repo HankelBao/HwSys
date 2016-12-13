@@ -9,7 +9,7 @@
     <body>
         <h1>SFLS G1C4 Homework System</h1>
         <?php
-            print($HWData["date"]);
+            print($HWData->due);
         ?>
     </body>
 </html>
