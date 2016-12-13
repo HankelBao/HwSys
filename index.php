@@ -11,16 +11,17 @@
         <hr>
         <?php
             foreach($HWData->HWRecord as $x) {
-                echo $x["data"].": </br>";
-                foreach($x->record as $y){
-                    echo "description: ".$y->description." </br>";
-                    echo "picture: ".$y->picture." </br>";
+                echo "<b>".$x["data"]."</b> </br>";
+                foreach($x->subject as $y){
+                    echo "<b>".$y['sub']."</b><br>";
+                    foreach($y->record as $z) {
+                        echo "record: </br>";
+                        echo ">> due: ".$z->due." </br>";
+                        echo ">> description: ".$z->description." </br>";
+                        echo ">> picture: ".$z->picture." </br>";
+                    }
                 }
             }
-            $save_xml = $HWData->asXML();
-            $file = fopen("test.xml","w");
-            fwrite($file,$save_xml);
-            fclose($file);
         ?>
     </body>
 </html>
