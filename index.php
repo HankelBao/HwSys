@@ -1,5 +1,5 @@
 <?php
-    $HWData = simplexml_load_file("test.xml");
+    $HWData = simplexml_load_file("G1C4HW.xml");
 ?>
 
 <html>
@@ -11,10 +11,12 @@
         <a href="/teachersClient.php">Add homework</a>
         <?php
             foreach($HWData->HWRecord as $x) {
-                echo $x->due.": ".$x->description." </br>";
-                echo $x->picture;
+                echo $x["data"].": ";
                 echo "</br>";
-                $x->due = "1999/04/04";
+                foreach($x->record as $y){
+                    echo "description: ".$y->description." </br>";
+                    echo "picture: ".$y->picture." </br>";
+                }
             }
             $save_xml = $HWData->asXML();
             $file = fopen("test.xml","w");
