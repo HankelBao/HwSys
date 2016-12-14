@@ -15,14 +15,14 @@
         </subject>
     </HWRecord>
     <HWRecord date="2016/12/14">
-        <subject sub="Eng"></subject>
-        <subject sub="EcoChi"></subject>
-        <subject sub="EcoFor"></subject>
-        <subject sub="MathsChi"></subject>
-        <subject sub="MathsFor"></subject>
-        <subject sub="PhyChi"></subject>
-        <subject sub="PhyFor"></subject>
-        <subject sub="ChemChi"></subject>
-        <subject sub="ChemFor"></subject>
+        <subject sub="Eng"><record>test<due>2016/12/15</due><description>Nice job!!!</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/16</due><description>&#x563F;&#x563F;</description></record><record>test<due>2016/12/15</due><description>A paper about that</description></record></subject>
+        <subject sub="EcoChi"><record>test<due>2016/12/14</due><description>Nice job!!!</description></record><record>test<due>2016/12/14</due><description>Nice job!!!</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/15</due><description>paper</description></record></subject>
+        <subject sub="EcoFor"><record>test<due>2016/12/23</due><description>&#x639;&#x627;&#x635;&#x645;&#x62A;&#x64A;&#x646; &#x631;&#x62E;&#x64A;&#x635;&#x627; &#x3B3;&#x3B9;&#x3B1;&#x3B3;&#x3B9;&#x3AC; &#x3B9;&#x3C3;&#x3C7;&#x3CD;&#x3B5;&#x3B9; &#x3AE;&#x3B4;&#x3B7; </description></record></subject>
+        <subject sub="MathsChi"/>
+        <subject sub="MathsFor"><record>test<due>2016/12/19</due><description>paper with daily question</description></record><record>test<due>2016/12/19</due><description>quize</description></record><record>test<due>2016/12/19</due><description>paper with daily question</description></record></subject>
+        <subject sub="PhyChi"><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record><record>test<due>2016/12/15</due><description>none</description></record></subject>
+        <subject sub="PhyFor"/>
+        <subject sub="ChemChi"><record>test<due>2016/12/15</due><description>4.2</description></record></subject>
+        <subject sub="ChemFor"><record>test<due>2112/12/23</due><description>hhhh</description></record></subject>
     </HWRecord>
 </SflsG1C4HW>
