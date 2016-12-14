@@ -6,6 +6,13 @@
                 <due>2016/12/13</due>
                 <description>This is just an example</description>
                 <picture>none</picture>
+                <attach>none</attach>
+            </record>
+            <record>
+                <description>listening and recording</description>
+            </record>
+            <record>
+                <description>translation</description>
             </record>
         </subject>
     </HWRecord>
