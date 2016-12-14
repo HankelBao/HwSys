@@ -13,15 +13,12 @@
     
     $HWDataN = simplexml_load_file("G1C4HW.xml");
     foreach($HWDataN->HWRecord as $x) {
-        if ($x["date"] = $newdate) {
+        if ($x["date"] == $newdate) {
             foreach($x->subject as $y) {
-                if ($y["sub"] = $newsub) {
-                    $y->addChild("record","s");
-                    foreach($y->record as $z) {
-                        if($z = "s") {
-                            $z->addChild("due","2016");
-                        }
-                    }
+                if ($y["sub"] == $newsub) {
+                    $z = $y->addChild("record","test");
+                    $z->addChild("due",$newdue);
+                    $z->addChild("description",$newdes);
                 }
             }
         }

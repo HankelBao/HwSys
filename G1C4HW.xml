@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <SflsG1C4HW>
-    <HWRecord data="2016/12/12" date="2016/12/12">
+    <HWRecord date="2016/12/12">
         <subject sub="Eng">
             <record>
                 <due>2016/12/13</due>
@@ -14,6 +14,6 @@
             <record>
                 <description>translation</description>
             </record>
-        <record>this is a test</record><record/></subject>
+        <record>test<due>2016/12/12</due><description>It's to xmlAdd test</description></record><record>test<due>2016/11/13</due><description>Reading and listening</description></record></subject>
     </HWRecord>
 </SflsG1C4HW>
