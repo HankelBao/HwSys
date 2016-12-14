@@ -11,12 +11,12 @@
     $newdes=$_POST["des"];
     echo "</br>description:".$newdes;
     
-    $HWDataN = simplexml_load_file("G1C4HW.xml");
+    $HWDataN = simplexml_load_file("database/G1C4HW.xml");
     foreach($HWDataN->HWRecord as $x) {
         if ($x["date"] == $newdate) {
             foreach($x->subject as $y) {
                 if ($y["sub"] == $newsub) {
-                    $z = $y->addChild("record","test");
+                    $z = $y->addChild("record","");
                     $z->addChild("due",$newdue);
                     $z->addChild("description",$newdes);
                 }
@@ -24,7 +24,7 @@
         }
     }
     $save_xml = $HWDataN->asXML();
-    $file = fopen("G1C4HW.xml","w");
+    $file = fopen("database/G1C4HW.xml","w");
     fwrite($file,$save_xml);
     fclose($file);
 ?>

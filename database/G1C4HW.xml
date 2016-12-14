@@ -12,7 +12,7 @@
             <record>
                 <description>translation</description>
             </record>
-        </subject>
+        <record>test<due/><description>Hhhhh</description></record><record><due/><description>New</description></record></subject>
     </HWRecord>
     <HWRecord date="2016/12/14">
         <subject sub="Eng"><record>test<due>2016/12/15</due><description>Nice job!!!</description></record><record>test<due>2016/12/15</due><description>paper</description></record><record>test<due>2016/12/16</due><description>&#x563F;&#x563F;</description></record><record>test<due>2016/12/15</due><description>A paper about that</description></record></subject>

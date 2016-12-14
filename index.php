@@ -1,5 +1,5 @@
 <?php
-    $HWData = simplexml_load_file("G1C4HW.xml");
+    $HWData = simplexml_load_file("database/G1C4HW.xml");
 ?>
 
 <html>
