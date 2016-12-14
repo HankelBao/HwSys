@@ -11,7 +11,7 @@
         <?php
             foreach($HWData->HWRecord as $x) {
                 echo "<hr>";
-                echo "<b>".$x["data"]."</b> </br>";
+                echo "<b>".$x["date"]."</b> </br>";
                 foreach($x->subject as $y){
                     echo "<b>".$y['sub']."</b><br>";
                     foreach($y->record as $z) {
