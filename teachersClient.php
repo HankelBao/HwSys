@@ -7,8 +7,8 @@
         <h5>Warning: you don't have the permission to add homework</h5>
         <hr>
         <form action="add.php" method="post">
-            the subject:
-            <select name="subject">
+            date:<input type="text" name="dat"></br>
+            the subject: <select name="sub">
                 <option value="Eng">Eng</option>
                 <option value="EcoChi">Eco Chinese</option>
                 <option value="EcoFor">Eco Foreign</option>
