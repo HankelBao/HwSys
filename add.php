@@ -2,7 +2,10 @@
 <head></head>
 <body>
 <?php
-    $newdate=$_POST["dat"];
+    $ny=$_POST["dy"]; 
+    $nm=$_POST["dm"]; 
+    $nd=$_POST["dd"];
+    $newdate=$ny."/".$nm."/".$nd;
     echo "date:".$newdate;
     $newsub=$_POST["sub"];
     echo "</br>subject:".$newsub;
@@ -28,4 +31,5 @@
     fwrite($file,$save_xml);
     fclose($file);
 ?>
+</br><a href="/index.php">back</a>
 </body>

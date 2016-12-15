@@ -5,6 +5,11 @@
 <html>
     <head>
         <title>SFLS G1C4 Homework System</title>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.write("js test");
+            }
+        </script>
     </head>
     <body>
         <h1>SFLS G1C4 Homework System</h1>
@@ -23,5 +28,6 @@
             }
         ?>
         <a href="/teachersClient.php">add homework</a>
+        
     </body>
 </html>

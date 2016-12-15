@@ -7,8 +7,28 @@
         <h5>Warning: you don't have the permission to add homework</h5>
         <hr>
         <form action="add.php" method="post">
-            date:<input type="text" name="dat"></br>
+            date:
+            year:<select name="dy">
+                <?php
+                    for ($x = 2016; $x <= 2019; $x++)
+                        echo "<option value=".$x.">".$x."</option>";
+                ?>
+            </select>
+            month:<select name="dm">
+                <?php
+                    for ($x = 1; $x <= 12; $x++)
+                        echo "<option value=".$x.">".$x."</option>";
+                ?>
+            </select>
+            day:<select name="dd">
+                <?php
+                    for ($x = 1; $x <= 31; $x++)
+                        echo "<option value=".$x.">".$x."</option>";
+                ?>
+            </select>
+            </br>
             the subject: <select name="sub">
+                <option value="All">All</option>
                 <option value="Eng">Eng</option>
                 <option value="EcoChi">Eco Chinese</option>
                 <option value="EcoFor">Eco Foreign</option>
