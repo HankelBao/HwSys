@@ -24,5 +24,6 @@
         ?>
         <a href="/teachersClient.php">add homework</a></br>
         <a href="/login.php">login</a>
+        <a href="/index.html">exam</a>
     </body>
 </html>
