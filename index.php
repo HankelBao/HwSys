@@ -26,7 +26,7 @@
     <body>
         <h1>SFLS G1C4 Homework System</h1>
         <div class="pure-g">
-            <div class="pure-u-1-3"><p><div class="c1 ph-500">asdfasdf</div></p></div>
+            <div class="pure-u-1-3"><p><div class="c1 ph-500">asdfafffsdf</div></p></div>
             <div class="pure-u-1-3"><p>start</p></div>
             <div class="pure-u-1-3"><p>start</p></div>
         </div>
