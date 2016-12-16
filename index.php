@@ -27,7 +27,7 @@
     <body>
         <div class="title pure-g">
             <div class="pure-u-1-2">
-                <h1>SFLS G1C4 Homework System3</h1></br>
+                <h1>SFLS G1C4 Homework System</h1></br>
             </div>
             <div class="pure-u-1-2">
         <form class="pure-form">
