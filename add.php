@@ -26,6 +26,8 @@
             }
         }
     }
+    move_uploaded_file($_FILES["file"]["tmp_name"],"upload/".$_FILES["file"]["name"]);
+    
     $save_xml = $HWDataN->asXML();
     $file = fopen("database/G1C4HW.xml","w");
     fwrite($file,$save_xml);
