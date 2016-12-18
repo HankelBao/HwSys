@@ -61,6 +61,7 @@
         ?>
         <a href="/teachersClient.php">add homework</a></br>
         <a href="/login.php">login</a>
-        <a href="/index.html">exam</a>
+        <a href="/html.php">exam</a>
+        <a href="test1/index.html">exam2</a>
     </body>
 </html>
