@@ -11,9 +11,14 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <form role="form">
-                    <input type="email" class="form-control" placeholder="Enter email">
-                </form>
+                <nav class="navbar navbar-inverse role=:nagivation">
+                    <a class="navbar-brand" href="html.php"><strong>Suzhou Foreign Language School Homework Sys</strong></a>
+                </nav>
+                <nav class="collapse nav-collapse">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li>aaa</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </div>
