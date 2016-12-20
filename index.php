@@ -1,68 +1,21 @@
-<?php
-    $HWData = simplexml_load_file("database/G1C4HW.xml");
-?>
-
-<html>
+<html lang="zh-CN">
     <head>
-        <title>SFLS G1C4 Homework System</title>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/base-min.css">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css">
-        <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style type="text/css">
-        .title{
-                background-color: #000000;
-                color: #FFFFFF;
-            }
-        .ph-100 {
-                min-height: 100px;
-            }
-        .navi {
-            background-color: #00FFFF;
-            color: #FFFFFF;
-            min-height:1000px;
-        }
-        </style>
+        <title>HwSys Welcome</title>
+        <!--device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximim-scale=1, user-scalable=no">
+        <!--jquery-->
+        <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <div class="title pure-g">
-            <div class="pure-u-1-2">
-                <h1>SFLS G1C4 Homework System</h1></br>
-            </div>
-            <div class="pure-u-1-2">
-        <form class="pure-form">
-            <fieldset>
-                <legend>Powered by HankelBao</legend>
-                <input type="email" >
-                <input type="password" placehold="Password">
-                <button type="submit" class="pure-button pure-button-primary">Sign in</button>
-            </fieldset>
-        </form>
-            </div>
+        <div class="container-fuild">
+            <img src="/welcome.jpg" class="img-responsive" alt="Responsive image">
+            <a href="/oldIndex.php">oldIndex</a>
+        </div> 
+        <div style="height:auto; width:auto; marign:auto">
+            <h1>welcome</h1>
         </div>
-        <div class="pure-g">
-            <div class="navi pure-u-4-24">
-                let's see
-            </div>
-        </div>
-        <?php
-            foreach($HWData->HWRecord as $x) {
-                echo "<hr>";
-                echo "<b>".$x["date"]."</b> </br>";
-                foreach($x->subject as $y){
-                    echo "<b>".$y['sub']."</b><br>";
-                    foreach($y->record as $z) {
-                        echo "<li>";
-                        echo $z->description." </br>";
-                        echo "</li>";
-                    }
-                }
-            }
-        ?>
-        <a href="/teachersClient.php">add homework</a></br>
-        <a href="/login.php">login</a>
-        <a href="/html.php">exam</a>
-        <a href="test1/index.html">exam2</a>
-        <a href="/gridtest.php">exam3</a>
     </body>
 </html>
