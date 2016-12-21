@@ -15,16 +15,16 @@
         
         <script type="text/javascript"> 
         $(document).ready(function(){
-            $(".drop-parent").click(function(){
-                $(this).children(".drop-child").slideToggle("fast");
+            $(".dropmenu-title").click(function(){
+                $(this).siblings(".dropmenu-list").slideToggle("fast");
             });
         });
         </script>
     
         <style type="text/css">
-        li.drop-parent, ul.drop-child {
+        .dropmenu,.dropmenu-title, .dropmenu-list {
         }
-        ul.drop-child{
+        .dropmenu-list{
             display:none;
         }
         </style>
@@ -50,27 +50,37 @@
             </form>
         </nav>
 
-        <ul class="list-group">
+        <!--<ul class="list-group">
             <li class="drop-parent list-group-item">
-                <strong>2016/12/12</strong>
+                <strong class="list-group-item">2016/12/12</strong>
                 <ul class="drop-child">
                     <li class="list-group-item">Eng</li>
                 </ul>
             </li>
-        </ul>
+        </ul>-->
+        <!--<div class="row"><div class="col-md-4">
         <?php
+            echo "<ul class='list-group'>";
             foreach($HWData->HWRecord as $x) {
-                echo "<b>".$x["date"]."</b> </br>";
+                echo "<li class='drop-parent list-group-item'><strong class='list-group-item'>".$x["date"]."</strong>";
+                echo "<ul class='drop-child'>";
                 foreach($x->subject as $y){
-                    echo "<b>".$y['sub']."</b><br>";
-                    foreach($y->record as $z) {
-                        echo "<li>";
-                        echo $z->description." </br>";
-                        echo "</li>";
-                    }
+                    echo "<li class='list-group-item'>".$y['sub']."</li>";
                 }
+                echo "</ul></li>";
             }
+            echo "</ul>";
         ?>
+        </div></div>-->
+        
+        <ul class="dropmenu">
+            <li class="dropmenu-title">title</li>
+            <ul class="dropmenu-list">
+                <li>test</li>
+            </ul>
+        </ul>
+        
+        
         
     </body>
 </html>
