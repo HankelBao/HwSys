@@ -16,10 +16,13 @@
         <!--My Theme(CSS & JS)-->
         <link rel="stylesheet" href="theme/frame.css">
         <script src="theme/frame.js"></script>
+        
+        <!--css for this web-->
+        <link rel="stylesheet" href="theme/costume.css">
     </head>
     
     <body>
-        <nav class="navbar navbar-default" role="nagivation" style="margin: 0px;">
+        <nav class="navbar navbar-default" role="nagivation" style="margin: 0px; background-color: #000000; border-radius: 0!important;">
             <div class="navbar-header">
                 <a class="navbar-brand" href="html.php"><strong>SFLS Homework System</strong></a>
             </div>
@@ -38,37 +41,35 @@
             </form>
         </nav>
 
-        <!--<ul class="list-group">
-            <li class="drop-parent list-group-item">
-                <strong class="list-group-item">2016/12/12</strong>
-                <ul class="drop-child">
-                    <li class="list-group-item">Eng</li>
+        <!--<ul>
+            <li class="dropmenu">
+                <strong class="dropmenu-title">title</strong>
+                <ul class="dropmenu-list">
+                    <li>test</li>
+                </ul>
+            </li>
+            <li class="dropmenu">
+                <strong class="dropmenu-title">title</strong>
+                <ul class="dropmenu-list">
+                    <li>test</li>
                 </ul>
             </li>
         </ul>-->
-        <!--<div class="row"><div class="col-md-4">
+        
+        <div class="row"><div class="col-md-4"><div style="margin:auto">
         <?php
-            echo "<ul class='list-group'>";
+            echo "<ul>";
             foreach($HWData->HWRecord as $x) {
-                echo "<li class='drop-parent list-group-item'><strong class='list-group-item'>".$x["date"]."</strong>";
-                echo "<ul class='drop-child'>";
+                echo "<li class='dropmenu'><strong class='dropmenu-title'>".$x["date"]."</strong>";
+                echo "<ul class='dropmenu-list'>";
                 foreach($x->subject as $y){
-                    echo "<li class='list-group-item'>".$y['sub']."</li>";
+                    echo "<li>".$y['sub']."</li>";
                 }
                 echo "</ul></li>";
             }
             echo "</ul>";
         ?>
-        </div></div>-->
-        
-        <ul class="dropmenu">
-            <li class="dropmenu-title">title</li>
-            <ul class="dropmenu-list">
-                <li>test</li>
-            </ul>
-        </ul>
-        
-        
+        </div></div></div>
         
     </body>
 </html>
