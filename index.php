@@ -13,21 +13,9 @@
         <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        <script type="text/javascript"> 
-        $(document).ready(function(){
-            $(".dropmenu-title").click(function(){
-                $(this).siblings(".dropmenu-list").slideToggle("fast");
-            });
-        });
-        </script>
-    
-        <style type="text/css">
-        .dropmenu,.dropmenu-title, .dropmenu-list {
-        }
-        .dropmenu-list{
-            display:none;
-        }
-        </style>
+        <!--My Theme(CSS & JS)-->
+        <link rel="stylesheet" href="theme/frame.css">
+        <script src="theme/frame.js"></script>
     </head>
     
     <body>
