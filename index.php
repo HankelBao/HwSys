@@ -77,24 +77,25 @@
         <?php
             echo "</br><ul>";
             foreach($HWData->HWRecord as $x) {
-                echo "<li class='dropmenu'><strong class='dropmenu-title'>".$x["date"]."</strong>";
-                echo "<ul class='dropmenu-list'>";
-                foreach($x->subject as $y){
-                    echo "<li class='div-res' name='".$x['date']."' id='".$y['sub']."'>".$y['sub']."</li>";
-                }
+                echo "<li class='dropmenu'>";
+                    echo "<strong class='dropmenu-title'>".$x["date"]."</strong>";
+                    echo "<ul class='dropmenu-list'>";
+                    foreach($x->subject as $y){
+                        echo "<li class='div-res' name='".$x['date']."' id='".$y['sub']."'>";
+                        echo $y["sub"]." ";
+                        echo "<span class='badge'>14</span>";                        
+                        echo "</li>";
+                    }
                 echo "</ul></li>";
             }
             echo "</ul>";
         ?>
         </div>
-        <div class="col-md-9" style="height:100%; border:1px solid #000000;margin:0px;">
-            <div id="contentDiv" style="height: auto;"></div>
-            <ul>
-            <li>add</li>
-            </ul>
-    
-            
+        <div class="col-md-9" id="contentDiv" style="height:100%; border:1px solid #000000;margin:0px;">
+            </br>
+            <div id="contentDiv" >
+                
+            </div>
         </div></div>
-        
     </body>
 </html>
