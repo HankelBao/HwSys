@@ -19,12 +19,30 @@
         
         <!--css for this web-->
         <link rel="stylesheet" href="theme/costume.css">
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".div_res").click(function(){
+                    alert("aa");
+                    var date=$(this).attr("name");
+                    var sub=$(this).attr("id");
+                    
+                    xhr = new XMLHttpRequest();
+                    var url = "quote.php?data=" + date + "&sub=" + sub;
+                    xhr.onreadystatechange = function(){
+                        alart("ok");
+                    }
+                    xhr.open("GET", url, ture);
+                    xhr.send(null);
+                });
+            });
+        </script>
     </head>
     
     <body>
-        <nav class="navbar navbar-default" role="nagivation" style="margin: 0px; background-color: #000000; border-radius: 0!important;">
+        <nav class="navbar navbar-default" role="nagivation" style="border:0; margin: 0px; background-color: #000000; border-radius: 0!important;">
             <div class="navbar-header">
-                <a class="navbar-brand" href="html.php"><strong>SFLS Homework System</strong></a>
+                <a class="navbar-brand" href="html.php" style="color:#FFFFFF;"><strong>SFLS Homework System</strong></a>
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="#">G1C1</a></li>
@@ -48,28 +66,25 @@
                     <li>test</li>
                 </ul>
             </li>
-            <li class="dropmenu">
-                <strong class="dropmenu-title">title</strong>
-                <ul class="dropmenu-list">
-                    <li>test</li>
-                </ul>
-            </li>
         </ul>-->
         
-        <div class="row"><div class="col-md-4"><div style="margin:auto">
+        <div class="row"><div class="col-md-3"style="height:100%; margin:0px; border:1px solid #000000;">
         <?php
-            echo "<ul>";
+            echo "</br><ul>";
             foreach($HWData->HWRecord as $x) {
                 echo "<li class='dropmenu'><strong class='dropmenu-title'>".$x["date"]."</strong>";
                 echo "<ul class='dropmenu-list'>";
                 foreach($x->subject as $y){
-                    echo "<li>".$y['sub']."</li>";
+                    echo "<li div='.div_res' name='".$x."' id='".$y."'>".$y['sub']."</li>";
                 }
                 echo "</ul></li>";
             }
             echo "</ul>";
         ?>
-        </div></div></div>
+        </div>
+        <div class="col-md-9" style="height:100%; border:1px solid #000000;margin:0px;">
+            
+        </div></div>
         
     </body>
 </html>
