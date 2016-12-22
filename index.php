@@ -31,7 +31,9 @@
                     xhr.onreadystatechange = function(){
                         if (xhr.readyState == 4) {
                             if (xhr.status == 200) {
+                                //document.getElementById("contentDiv").slideUp("fast");
                                 document.getElementById("contentDiv").innerHTML = xhr.responseText;
+                                //document.getElementById("contentDiv").slideToggle("slow");
                             }
                         }
                     }
@@ -43,7 +45,7 @@
     </head>
     
     <body>
-        <div class="row"><nav class="navbar navbar-default" role="nagivation" style="border:0; margin: 0px; background-color: #000000; border-radius: 0!important;">
+        <div class="row"><div class="col-md-12"><nav class="navbar navbar-default" role="nagivation" style="border:0; margin: 0px; background-color: #000000; border-radius: 0!important;">
             <div class="navbar-header">
                 <a class="navbar-brand" href="html.php" style="color:#FFFFFF;"><strong>SFLS Homework System</strong></a>
             </div>
@@ -60,7 +62,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">sign in</button>
             </form>
-        </nav></div>
+        </nav></div></div>
 
         <!--<ul>
             <li class="dropmenu">
