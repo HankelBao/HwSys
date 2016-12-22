@@ -22,17 +22,20 @@
         
         <script type="text/javascript">
             $(document).ready(function(){
-                $(".div_res").click(function(){
-                    alert("aa");
-                    var date=$(this).attr("name");
-                    var sub=$(this).attr("id");
+                $(".div-res").click(function(){
+                    date = $(this).attr("name");
+                    sub = $(this).attr("id");
                     
                     xhr = new XMLHttpRequest();
-                    var url = "quote.php?data=" + date + "&sub=" + sub;
+                    url = "quote.php?date=" + date + "&sub=" + sub;
                     xhr.onreadystatechange = function(){
-                        alart("ok");
+                        if (xhr.readyState == 4) {
+                            if (xhr.status == 200) {
+                                document.getElementById("contentDiv").innerHTML = xhr.responseText;
+                            }
+                        }
                     }
-                    xhr.open("GET", url, ture);
+                    xhr.open("GET", url, true);
                     xhr.send(null);
                 });
             });
@@ -40,7 +43,7 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-default" role="nagivation" style="border:0; margin: 0px; background-color: #000000; border-radius: 0!important;">
+        <div class="row"><nav class="navbar navbar-default" role="nagivation" style="border:0; margin: 0px; background-color: #000000; border-radius: 0!important;">
             <div class="navbar-header">
                 <a class="navbar-brand" href="html.php" style="color:#FFFFFF;"><strong>SFLS Homework System</strong></a>
             </div>
@@ -57,7 +60,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">sign in</button>
             </form>
-        </nav>
+        </nav></div>
 
         <!--<ul>
             <li class="dropmenu">
@@ -75,14 +78,14 @@
                 echo "<li class='dropmenu'><strong class='dropmenu-title'>".$x["date"]."</strong>";
                 echo "<ul class='dropmenu-list'>";
                 foreach($x->subject as $y){
-                    echo "<li div='.div_res' name='".$x."' id='".$y."'>".$y['sub']."</li>";
+                    echo "<li class='div-res' name='".$x['date']."' id='".$y['sub']."'>".$y['sub']."</li>";
                 }
                 echo "</ul></li>";
             }
             echo "</ul>";
         ?>
         </div>
-        <div class="col-md-9" style="height:100%; border:1px solid #000000;margin:0px;">
+        <div id="contentDiv" class="col-md-9" style="height:100%; border:1px solid #000000;margin:0px;">
             
         </div></div>
         
