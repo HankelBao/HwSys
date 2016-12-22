@@ -87,7 +87,12 @@
             echo "</ul>";
         ?>
         </div>
-        <div id="contentDiv" class="col-md-9" style="height:100%; border:1px solid #000000;margin:0px;">
+        <div class="col-md-9" style="height:100%; border:1px solid #000000;margin:0px;">
+            <div id="contentDiv" style="height: auto;"></div>
+            <ul>
+            <li>add</li>
+            </ul>
+    
             
         </div></div>
         
