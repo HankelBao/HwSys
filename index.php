@@ -63,15 +63,6 @@
                 <button type="submit" class="btn btn-primary">sign in</button>
             </form>
         </nav></div></div>
-
-        <!--<ul>
-            <li class="dropmenu">
-                <strong class="dropmenu-title">title</strong>
-                <ul class="dropmenu-list">
-                    <li>test</li>
-                </ul>
-            </li>
-        </ul>-->
         
         <div class="row"><div class="col-md-3"style="height:100%; margin:0px; border:1px solid #000000;">
         <?php
@@ -83,7 +74,7 @@
                     foreach($x->subject as $y){
                         echo "<li class='div-res' name='".$x['date']."' id='".$y['sub']."'>";
                         echo $y["sub"]." ";
-                        echo "<span class='badge'>14</span>";                        
+                        echo "<span class='badge'>".$y["num"]."</span>";                        
                         echo "</li>";
                     }
                 echo "</ul></li>";
@@ -95,6 +86,9 @@
             </br>
             <div id="contentDiv" >
                 
+            </div>
+            <div>
+                </br><li><a href="teachersClient.php">add</a></li>
             </div>
         </div></div>
     </body>
