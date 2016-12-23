@@ -22,6 +22,7 @@
                     $z = $y->addChild("record","");
                     $z->addChild("due",$newdue);
                     $z->addChild("description",$newdes);
+                    $y["num"]++;
                 }
             }
         }

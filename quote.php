@@ -7,11 +7,11 @@ foreach($HWData->HWRecord as $x) {
         foreach($x->subject as $y) {
             if ($y["sub"] == $sub) {
                 echo "</br>";
+                echo "<ul class='list-group'>";
                 foreach($y->record as $z) {
-                    echo "<ul>";
-                       echo "<li>".$z->description."</li>";
-                    echo "</ul>";
+                    echo "<li class='list-group-item'>".$z->description."</li>";
                 }
+                echo "</ul>";
             }
         }
     }
