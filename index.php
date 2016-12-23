@@ -34,8 +34,23 @@
         		<strong >Suzhou Foreign Language School Homework System</strong>
         	</div>
         </div>
-        <div style="margin:0 auto; height:30%; width:40%; background-color:#FFFFFF; opacity:0.75">
-        	
+        <div style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); width:40%; height:30%;">
+        	<div class="panel panel-info">
+        		<div class="panel-heading" style="text-align:center">
+        			<strong>Log In to HW Sys</strong>
+        		</div>
+        		<div class="panel-body">
+        			<form>
+        				<input style="height: 45px" type="text" class="form-control" placeholder="Username...">
+        				<div style="height:10px"></div>
+        				<input style="height: 45px" type="password" class="form-control" placeholder="Password...">
+        				<div style="height:10px"></div>
+        				<div style="text-align:center">
+        				<button class="btn btn-info" style="height:45px; width:100%">Log in</button>
+        				</div>
+        			</form>
+        		</div>
+        	</div>
         </div>
     </body>
 </html>
