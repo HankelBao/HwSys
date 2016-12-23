@@ -14,23 +14,29 @@
         <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <!--My Theme(CSS & JS)-->
-        <link rel="stylesheet" href="theme/frame.css">
-        <script src="theme/frame.js"></script>
+       <!-- <link rel="stylesheet" href="theme/frame.css">
+        <script src="theme/frame.js"></script>-->
         
         <!--css for this web-->
-        <link rel="stylesheet" href="theme/costume.css">
+        <!--<link rel="stylesheet" href="theme/costume.css">-->
+        
+        <!--css for login-->
+        <link rel="stylesheet" href="theme/login.css">
         
         <script type="text/javascript">
-
+        function FinishLoading(){
+        	$(".picWaitForLoad").fadeIn(1500);
+        	$(".topWaitForLoad").slideDown(1500);
+        }
         </script>
     </head>
     
-    <body>
-	    <div style="position:absolute; width:100%; height:100%; z-index:-1">    
+    <body onload="FinishLoading()">
+	    <div class="picWaitForLoad" style="position:absolute; width:100%; height:100%; z-index:-1">    
 		    <img src="welcome.jpg" height="100%" width="100%"/>    
 	    </div> 
         <div class="row">
-        	<div class="col-md-12" style="background-color:#FFFFFF; height:auto; opacity:0.65; font-size:1.5em">
+        	<div class="topWaitForLoad col-md-12" style="background-color:#FFFFFF; height:auto; opacity:0.65; font-size:1.5em">
         		<strong >Suzhou Foreign Language School Homework System</strong>
         	</div>
         </div>
