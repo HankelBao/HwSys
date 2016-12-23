@@ -1,112 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    $HWData = simplexml_load_file("database/G1C4HW.xml");
+?>
 
+<html lang="zh-CN">
     <head>
-
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap Login Form Template</title>
-
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/form-elements.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-
-    </head>
-
-    <body>
-
-        <!-- Top content -->
-        <div class="top-content">
-        	
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Bootstrap</strong> Login Form</h1>
-                            <div class="description">
-                            	<p>
-	                            	This is a free responsive login form made with Bootstrap. 
-	                            	Download it on <a href="http://azmind.com"><strong>AZMIND</strong></a>, customize and use it as you like!
-                            	</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
-                        	<div class="form-top">
-                        		<div class="form-top-left">
-                        			<h3>Login to our site</h3>
-                            		<p>Enter your username and password to log on:</p>
-                        		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
-                        		</div>
-                            </div>
-                            <div class="form-bottom">
-			                    <form role="form" action="" method="post" class="login-form">
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-			                        </div>
-			                        <button type="submit" class="btn">Sign in!</button>
-			                    </form>
-		                    </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 social-login">
-                        	<h3>...or login with:</h3>
-                        	<div class="social-login-buttons">
-	                        	<a class="btn btn-link-2" href="#">
-	                        		<i class="fa fa-facebook"></i> Facebook
-	                        	</a>
-	                        	<a class="btn btn-link-2" href="#">
-	                        		<i class="fa fa-twitter"></i> Twitter
-	                        	</a>
-	                        	<a class="btn btn-link-2" href="#">
-	                        		<i class="fa fa-google-plus"></i> Google Plus
-	                        	</a>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-
-
-        <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <title>HwSys Welcome</title>
+        <!--device-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximim-scale=1, user-scalable=no">
+        <!--jquery-->
+        <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
-
+        <!--My Theme(CSS & JS)-->
+        <link rel="stylesheet" href="theme/frame.css">
+        <script src="theme/frame.js"></script>
+        
+        <!--css for this web-->
+        <link rel="stylesheet" href="theme/costume.css">
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".div-res").click(function(){
+                    date = $(this).attr("name");
+                    sub = $(this).attr("id");
+                    
+                    xhr = new XMLHttpRequest();
+                    url = "quote.php?date=" + date + "&sub=" + sub;
+                    xhr.onreadystatechange = function(){
+                        if (xhr.readyState == 4) {
+                            if (xhr.status == 200) {
+                                //document.getElementById("contentDiv").slideUp("fast");
+                                document.getElementById("contentDiv").innerHTML = xhr.responseText;
+                                //document.getElementById("contentDiv").slideToggle("slow");
+                            }
+                        }
+                    }
+                    xhr.open("GET", url, true);
+                    xhr.send(null);
+                });
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div class="row"><div class="col-md-12"><nav class="navbar navbar-default" role="nagivation" style="border:0; margin: 0px; background-color: #000000; border-radius: 0!important;">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="html.php" style="color:#FFFFFF;"><strong>SFLS Homework System</strong></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">G1C1</a></li>
+                <li><a href="#">G1C2</a></li>
+                <li><a href="#">G1C3</a></li>
+                <li class="active"><a href="#">G1C4</a></li>
+            </ul>
+            <form class="navbar-form navbar-right form-inline" role="form">
+                <div class="form-group">
+                    <input type="test" class="form-control" placeholder="Username">
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-primary">sign in</button>
+            </form>
+        </nav></div></div>
+        
+        <div class="row"><div class="col-md-3"style="height:100%; margin:0px; border:1px solid #000000;">
+        <?php
+            echo "</br><ul>";
+            foreach($HWData->HWRecord as $x) {
+                echo "<li class='dropmenu'>";
+                    echo "<strong class='dropmenu-title'>".$x["date"]."</strong>";
+                    echo "<ul class='dropmenu-list'>";
+                    foreach($x->subject as $y){
+                        echo "<li class='div-res' name='".$x['date']."' id='".$y['sub']."'>";
+                        echo $y["sub"]." ";
+                        echo "<span class='badge'>".$y["num"]."</span>";                        
+                        echo "</li>";
+                    }
+                echo "</ul></li>";
+            }
+            echo "</ul>";
+        ?>
+        </div>
+        <div class="col-md-9" id="contentDiv" style="height:100%; border:1px solid #000000;margin:0px;">
+            </br>
+            <div id="contentDiv" >
+                
+            </div>
+            <div>
+                </br><li><a href="teachersClient.php">add</a></li>
+            </div>
+        </div></div>
     </body>
-
 </html>
