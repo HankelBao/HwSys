@@ -12,13 +12,9 @@
         <!--bootstrap-->
         <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <!--My Theme(CSS & JS)-->
-       <!-- <link rel="stylesheet" href="theme/frame.css">
-        <script src="theme/frame.js"></script>-->
-        
-        <!--css for this web-->
-        <!--<link rel="stylesheet" href="theme/costume.css">-->
+       
+        <!--global css-->
+        <link rel="stylesheet" href="theme/global.css">
         
         <!--css for login-->
         <link rel="stylesheet" href="theme/login.css">
@@ -37,16 +33,16 @@
 	    </div> 
         <div class="row">
         	<div class="topWaitForLoad col-md-12" style="background-color:#FFFFFF; height:auto; opacity:0.65; font-size:1.5em">
-        		<strong >Suzhou Foreign Language School Homework System</strong>
+        		<strong>Suzhou Foreign Language School Homework System</strong> 
         	</div>
         </div>
         <div style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); width:40%; height:30%;">
         	<div class="panel panel-info">
         		<div class="panel-heading" style="text-align:center">
-        			<strong>Log In to HW Sys</strong>
+        			<strong><h4>Log In</h4></strong>
         		</div>
         		<div class="panel-body">
-        			<form>
+        			<form action="studentClient.php">
         				<input style="height: 45px" type="text" class="form-control" placeholder="Username...">
         				<div style="height:10px"></div>
         				<input style="height: 45px" type="password" class="form-control" placeholder="Password...">
