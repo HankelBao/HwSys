@@ -17,25 +17,33 @@
         
         <!--css for student Client-->
         <link rel="stylesheet" href="theme/studentClient.css">
-        
-        <script type="text/javascript">
-        
-        </script>
     </head>
     
     <body>
-    	<div style="position:fixed; width:100%; height:45px; line-height:45px; background-color:#F9F9F9; color:#272727; border-bottom:1.5px solid #E0E0E0;">
-    		<div style="float:left;margin-left:5%;width:30%">
+    	<div class="navBar">
+    		<div class="brandBar">
     			<span class="glyphicon glyphicon-header"></span>
-    			SFLS HW Sys
+    			<strong>Suzhou Foreign Language School Homework System</strong>
     		</div>
-    		<div style="float:left;width:45%">
-    			G1C4
+    		<div class="userBar">
+    			<span class="glyphicon glyphicon-user"></span>
+    			Hankel1.4
     		</div>
-    		<div style="float:left;width:20%">Hankel1.4</div>
     	</div>
-    	<div id="setHeight" style="position:fixed; top:45px; width:30%; height:100%; background-color:#000000; z-index:-1">
-    		
+    	<div class="leftBar">
+    		<div class="dataSelectorBar">
+    		    <a class="dataSelector dataSelector-active">Mon</a>
+    		    <a class="dataSelector">Tue</a>
+    		    <a class="dataSelector">Wed</a>
+    		    <a class="dataSelector">Thu</a>
+    		    <a class="dataSelector">Fri</a>
+    		</div>
+    		<div style="padding-top:30px">
+	
+    		</div>
+    	</div>
+    	<div style="position:relative; top:45px; padding-left:30%;z-index:-1">
+             
     	</div>
     </body>
 </html>
