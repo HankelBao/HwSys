@@ -1,3 +1,9 @@
+<?php
+if(!isset($_SESSION["username"])){
+	header("location:index.php");
+}
+?> 
+
 <html lang="zh-CN">
     <head>
         <title>Student Client</title>

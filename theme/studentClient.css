@@ -3,9 +3,9 @@
 	width:100%;
 	height:45px;
 	line-height:45px;
-	background-color:#F9F9F9;
-	color:#373737;
-	border-bottom:1.5px solid #E0E0E0;
+	background-color:#FFFFFF;
+	color:#004B97;
+	border-bottom:1.5px solid #46A3FF;
 }
 
 .brandBar{
@@ -26,8 +26,8 @@
 	top:50px;
 	width:30%; 
 	height:100%; 
-	background-color:#F9F9F9; 
-	border-right:0.7px solid #E0E0E0;
+	background-color:#FFFFFF;
+	border-right:0.7px solid #46A3FF;
 }
 
 .dataSelectorBar{
@@ -48,19 +48,15 @@ a.dataSelector{
 	text-align: center;
 }
 a.dataSelector:link,a,dataSelector:visited{
-	color:#9A9A9A;
-	border-bottom:1px solid #9A9A9A;
+	color:#46A3FF;
+	border-bottom:1px solid #46A3FF;
 }
 a.dataSelector:hover{
-	color:#474747;
+	color:#0080FF;
 }
-a.dataSelector:active{
-	color:#272727;
-	border-bottom:1px solid #272727;
-}
-a.dataSelector-active{
-	color:#272727;
-	border-bottom:1.2px solid #272727;
+a.dataSelector:active,a.dataSelector-active{
+	color:#004B97;
+	border-bottom:1px solid #004B97;
 }
 
 

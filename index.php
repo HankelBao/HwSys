@@ -41,13 +41,13 @@
         			<strong><h4>Log In</h4></strong>
         		</div>
         		<div class="panel-body">
-        			<form action="studentClient.php">
-        				<input style="height: 45px" type="text" class="form-control" placeholder="Username...">
+        			<form action="database/login.php" method="POST">
+        				<input name="username" style="height: 45px" type="text" class="form-control" placeholder="Username...">
         				<div style="height:10px"></div>
-        				<input style="height: 45px" type="password" class="form-control" placeholder="Password...">
+        				<input name="password" style="height: 45px" type="password" class="form-control" placeholder="Password...">
         				<div style="height:10px"></div>
         				<div style="text-align:center">
-        				<button class="btn btn-info" style="height:45px; width:100%">Log in</button>
+        				<button class="btn btn-info" type="submit" style="height:45px; width:100%">Log in</button>
         				</div>
         			</form>
         		</div>
