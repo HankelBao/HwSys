@@ -22,7 +22,6 @@
         <script type="text/javascript">
         function FinishLoading(){
         	$(".picWaitForLoad").fadeIn(1500);
-        	$(".topWaitForLoad").slideDown(1500);
         }
         </script>
     </head>
@@ -32,7 +31,7 @@
 		    <img src="welcome.jpg" height="100%" width="100%"/>    
 	    </div> 
         <div class="row">
-        	<div class="topWaitForLoad col-md-12" style="background-color:#FFFFFF; height:auto; opacity:0.65; font-size:1.5em">
+        	<div class="col-md-12" style="background-color:#FFFFFF; height:auto; opacity:0.65; font-size:1.5em">
         		<strong>Suzhou Foreign Language School Homework System</strong> 
         	</div>
         </div>
