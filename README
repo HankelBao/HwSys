@@ -1,0 +1,40 @@
+README of HWSYS
+
+HWSYS 是一个作业布置的后台系统
+可以呈现并归类作业资源，从qq群抓取有效信息
+
+数据库设计：
+    基于tag的设计，或者说是time和subject的二重索引
+    会有一个主记录index以及time和subject的关系列表
+    从而更加方便查询
+
+后台设计（功能）：
+    添加
+    查询
+
+前台设计：
+    教师客户端
+    学生客户端
+
+似乎逻辑很简单，不是吗？
+我要先考虑以下用nosql还是sql
+
+暂时决定：
+    数据库
+        mangodb
+    前端
+        swift
+        所用到的关键库：
+            SwiftyJSON
+            发送POST请求相关函数
+    后端
+        java/node.js/python
+        处理post请求
+        mangodb链接
+        合成json数据
+    数据传输
+        ajax+JSON
+
+issue:
+    数据库具体命名和格式
+    json数据的组合方式和格式
