@@ -55,3 +55,14 @@ issue:
     * 认证订阅
     * 每日晚6点定是发送
     * 查询业务
+
+## 2017-7-15
+这里是文件配置：
+main.py:
+	主程序
+interface.py:
+	qqbot相关程序
+handler.py:
+	逻辑层
+database.py:
+	数据存储
