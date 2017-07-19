@@ -1,5 +1,12 @@
 import interface
-import interface
+import database
+import handler
 
 if __name__ == '__main__':
-    interface.init()
+    database.test()
+    handler.test()
+
+    OriginContent = "eee"
+    ReplyContent = handler.GroupOnMessage("1115443660", OriginContent)
+    print(ReplyContent)
+    #interface.init()
