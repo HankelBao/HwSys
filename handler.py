@@ -3,7 +3,8 @@ import database
 def GroupOnMessage(SenderQQ, Content):
     for qq in database.GetTeacherQQ():
         if qq == SenderQQ:
-            return "abcdefghijklmn"
+            print(Content)
+            return Content
     return
 #           open("record","a").write(SenderQQ)
 #           open("record","a").write(Content)
@@ -12,6 +13,6 @@ def GroupOnMessage(SenderQQ, Content):
 # def BuddyOnMessage(SenderQQ, Content):
 
 
-def test():
+def init():
 #    print("Hello World")
     return

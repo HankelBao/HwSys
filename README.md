@@ -20,6 +20,11 @@ sqlite3
 
 ## Structure of Database
 
+### Names
+Name of the database : hw.db
+Names of tables: record, rel_teacher
+
+
 ### Table: record
 Main Record of the homework history
 | Word      | Utilities                                  |
@@ -32,9 +37,8 @@ Main Record of the homework history
 
 ### Table: rel_teacher
 Relationship Table: who the teachers are
-| Word            | Utilities                      |
-|-----------------|--------------------------------|
-| Id              | Main Key, Unique               |
-| QQNumber        | qq number of the teacher, text |
-| Name of Teacher | name of the teacher, text      |
-
+| Word     | Utilities                      |
+|----------|--------------------------------|
+| Id       | Main Key, Unique               |
+| QQNumber | qq number of the teacher, text |
+| Name     | name of the teacher, text      |

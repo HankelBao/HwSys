@@ -1,7 +1,7 @@
 import sqlite3
 
 def GetConnection():
-    con = sqlite3.connect("database.db")
+    con = sqlite3.connect("hw.db")
     con.row_factory = sqlite3.Row
     return con
 
@@ -18,8 +18,12 @@ def GetTeacherQQ():
 
     teacherQQ = []
     for item in cu.fetchall():
-        teacherQQ.append(item['qq'])
+        teacherQQ.append(item['QQNumber'])
     return teacherQQ
 
-def test():
+def AddRecord(TeacherId, SendTime, DueTime, Content):
+    cu = GetCursor()
+    cu.execute("insert into record values (" +TeacherId+ "," +SendTime+ "," +DueTime+ "," +Content+ ")")
+
+def init():
     return

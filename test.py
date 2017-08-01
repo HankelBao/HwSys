@@ -1,4 +1,3 @@
-import database
-
-for element in database.GetTeacherQQ():
-    print(element)
+a = "asdf"
+b = "asjfkl"
+print(a+b)
