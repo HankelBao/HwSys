@@ -29,8 +29,8 @@ def get_teacher_qq():
 def add_record(teacher_id, send_time, due_time, content):
     """Add a main record to the central database"""
     cu_tmp = get_cursor()
-    cu_tmp.execute("insert into record values (" + teacher_id + "," +
-                   send_time + "," + due_time + "," + content + ")")
+    cu_tmp.execute("insert into record values (?, ?, ?, ?)",
+                   teacher_id, send_time, due_time, content)
 
 
 def init():
