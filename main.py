@@ -1,3 +1,5 @@
+# main.py:
+# The main entrance of the whole system
 import interface
 import database
 import handler
@@ -8,5 +10,5 @@ if __name__ == '__main__':
 
     #OriginContent = "eee"
     #ReplyContent = handler.GroupOnMessage("2531878373", OriginContent)
-    #print(ReplyContent)
+    # print(ReplyContent)
     interface.init()
