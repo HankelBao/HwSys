@@ -10,8 +10,6 @@ def GetCursor():
     cu = con.cursor()
     return cu
 
-#
-# Relationship Manage between Teachers and Main Record
 def GetTeacherQQ():
     cu = GetCursor()
     cu.execute("select * from rel_teacher")
