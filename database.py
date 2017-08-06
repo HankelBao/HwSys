@@ -1,4 +1,4 @@
-# The sqlite3 module
+""" The sqlite3 module """
 import sqlite3
 
 
@@ -9,16 +9,16 @@ def get_connection():
     return con
 
 
-def get_cursor():
+def get_cursor(connection_tmp):
     """Get cursor used to exec commmand"""
-    con = get_connection()
-    cu_tmp = con.cursor()
+    cu_tmp = connection_tmp.cursor()
     return cu_tmp
 
 
 def get_teacher_qq():
     """get the qq number of all the teachers"""
-    cu_tmp = get_cursor()
+    co_tmp = get_connection()
+    cu_tmp = get_cursor(co_tmp)
     cu_tmp.execute("select * from rel_teacher")
     teacher_qq = []
     for item in cu_tmp.fetchall():
@@ -28,9 +28,11 @@ def get_teacher_qq():
 
 def add_record(teacher_id, send_time, due_time, content):
     """Add a main record to the central database"""
-    cu_tmp = get_cursor()
+    co_tmp = get_connection()
+    cu_tmp = get_cursor(co_tmp)
     cu_tmp.execute("insert into record values (?, ?, ?, ?)",
                    teacher_id, send_time, due_time, content)
+    co_tmp.commit()
 
 
 def init():
