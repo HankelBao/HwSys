@@ -9,10 +9,7 @@ def GroupOnMessage(SenderQQ, Content):
 #           open("record","a").write(SenderQQ)
 #           open("record","a").write(Content)
 #           open("record","a").write("\n")
-
 # def BuddyOnMessage(SenderQQ, Content):
-
-
 def init():
 #    print("Hello World")
     return
