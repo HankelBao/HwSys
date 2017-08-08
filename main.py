@@ -1,14 +1,22 @@
-# main.py:
-# The main entrance of the whole system
-import interface
-import database
+"""
+Main.py:
+    Maintain the whole system
+"""
 import handler
+from qqbot import QQBotSlot as qqbotslot, RunBot
 
 if __name__ == '__main__':
-    database.init()
-    handler.init()
+    RunBot()
 
-    #OriginContent = "eee"
-    #ReplyContent = handler.GroupOnMessage("2531878373", OriginContent)
-    # print(ReplyContent)
-    interface.init()
+
+@qqbotslot
+def onQQMessage(bot, contact, member, content):
+    """
+    black box, it will be called when on message
+    """
+    if contact.qq == "494541401":
+        reply_message = handler.group_on_message(member.qq, content)
+        if reply_message:
+            bot.SendTo(contact, reply_message)
+    else:
+        reply_message = handler.person_on_message(contact.qq, content)

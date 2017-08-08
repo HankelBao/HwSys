@@ -1,7 +1,6 @@
 """ The sqlite3 module """
 import sqlite3
 
-
 def get_connection():
     """Get connection from the database"""
     con = sqlite3.connect("hw.db")
@@ -25,7 +24,6 @@ def get_teacher_qq():
         teacher_qq.append(item['QQNumber'])
     return teacher_qq
 
-
 def add_record(teacher_id, send_time, due_time, content):
     """Add a main record to the central database"""
     co_tmp = get_connection()
@@ -33,8 +31,4 @@ def add_record(teacher_id, send_time, due_time, content):
     cu_tmp.execute("insert into record values (?, ?, ?, ?)",
                    teacher_id, send_time, due_time, content)
     co_tmp.commit()
-
-
-def init():
-    """init the database module"""
-    return
+    

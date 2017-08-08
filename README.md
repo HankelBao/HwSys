@@ -11,12 +11,10 @@ python with qqbot && sqlite3
 sqlite3
 
 ## Files of the Program
-| Name of Files | Function                                                 | Depth from Main (start from 0 which represents just the main) |
-|---------------|----------------------------------------------------------|---------------------------------------------------------------|
-| main.py       | maintain the lifetime                                    | 0                                                             |
-| handler.py    | answer the content from person and the official qq group | 1                                                             |
-| database.py   | record and provide the data from teachers                | 2                                                             |
-| interface.py  | drivers for qq, for sending and answering qq messages    | 2                                                             |
+| File Name | Function |
+| --------- | -------- |
+| main.py   | all the logic stuff |
+| database.py | all about recording and abstracting |
 
 ## Structure of Database
 
@@ -42,3 +40,6 @@ Relationship Table: who the teachers are
 | Id       | Main Key, Unique               |
 | QQNumber | qq number of the teacher, text |
 | Name     | name of the teacher, text      |
+
+
+## Let's choose the editor, atom or vscode

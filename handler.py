@@ -11,15 +11,12 @@ def group_on_message(sender_qq, content):
     """
     for qq_number in database.get_teacher_qq():
         if qq_number == sender_qq:
-            print(content)
-            return content
+            return qq_number
     return
-#           open("record","a").write(SenderQQ)
-#           open("record","a").write(Content)
-#           open("record","a").write("\n")
-# def BuddyOnMessage(SenderQQ, Content):
 
 
-def init():
-    """ Init the handler """
-    return
+def person_on_message(sender_qq, content):
+    """
+    person_on_message:
+    """
+    return content
